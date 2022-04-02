@@ -8,7 +8,36 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <RelativePanel>
 
-    </Grid>
+        <Border
+            Width="300"
+            Height="350"
+            Background="Black"
+            Margin="40"
+            Name="rectangle1">
+            <TextBlock
+            Width="300"
+            Height="350"
+            PointerEntered="rectangle1_PointerEntered"
+            PointerExited="rectangle1_PointerExited">
+            </TextBlock>
+        </Border>
+
+        <Border
+            Width="300"
+            Height="350"
+            Background="Orange"
+            RelativePanel.AlignRightWithPanel="True"
+            Margin="40"
+            Name="rectangle2">
+            <TextBlock
+            Width="300"
+            Height="350"
+            PointerEntered="rectangle1_PointerEntered"
+            PointerExited="rectangle1_PointerExited">
+            </TextBlock>
+        </Border>
+
+    </RelativePanel>
 </Page>

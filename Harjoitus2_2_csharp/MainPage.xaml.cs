@@ -26,5 +26,17 @@ namespace Harjoitus2_2_csharp
         {
             this.InitializeComponent();
         }
+
+        private void rectangle1_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush(Windows.UI.Colors.Purple);
+            rectangle2.Background = mySolidColorBrush;
+        }
+
+        private void rectangle1_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush(Windows.UI.Colors.Orange);
+            rectangle2.Background = mySolidColorBrush;
+        }
     }
 }
